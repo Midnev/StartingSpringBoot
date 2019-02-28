@@ -152,18 +152,18 @@ Monolothic Spring boot & Mysql
 
 	- java 폴더 내에 test.controller 패키지를 새로 만든 후 FirstController.java 파일을 만든다.
 	--------------------------------------------------------
-	package test.controller;
-
-	import org.springframework.stereotype.Controller;
-	import org.springframework.web.bind.annotation.GetMapping;
-
-	@Controller
-	public class FirstController {
-		@GetMapping("/myfirstpage")
-	    public String firstpage(){
-	        return "first";
-	    }
-	}
+        package test.controller;
+    
+        import org.springframework.stereotype.Controller;
+        import org.springframework.web.bind.annotation.GetMapping;
+    
+        @Controller
+        public class FirstController {
+            @GetMapping("/myfirstpage")
+            public String firstpage(){
+                return "first";
+            }
+        }
 	--------------------------------------------------------
 		- @Controller : 해당 클래스는 컨트롤러임을 알려주고 기능이 있을 경우 추가가 된다.
 		- @GetMapping :  url을 요청받았을 때 값을 돌려준다는 의미이며 RequestMapping을 세분화한 것 이다.
